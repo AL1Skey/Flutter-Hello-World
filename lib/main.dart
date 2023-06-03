@@ -6,7 +6,14 @@ class Test extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        home: Text('Hello World',
-            style: TextStyle(fontSize: 60, color: Colors.green[400])));
+      theme: ThemeData(primaryColor: Colors.lightBlue),
+      home: Scaffold(
+          appBar: AppBar(
+            title: Text('Greeting Word from Other World'),
+          ),
+          body: Center(
+            child: Text('Hello World'),
+          )),
+    );
   }
 }
