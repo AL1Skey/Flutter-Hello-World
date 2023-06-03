@@ -12,7 +12,10 @@ class Test extends StatelessWidget {
             title: Text('Greeting Word from Other World'),
           ),
           body: Center(
-            child: Text('Hello World'),
+            child: Text(
+              'Hello World',
+              style: TextStyle(fontSize: 60),
+            ),
           )),
     );
   }
